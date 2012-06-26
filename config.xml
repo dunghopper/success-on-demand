@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "J5963N9JBS.com.success.ondemand"
-	version 	= "0.0.11">
+	version 	= "0.0.12">
 
 	<name>Success On Demand</name>
 
@@ -18,4 +18,6 @@
 	<icon src="icon.png" gap:role="default" />
 
   <preference name="orientation" value="portrait" />
+
+  <access origin="*" browserOnly="true"/>
 </widget>
