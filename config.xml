@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "J5963N9JBS.com.success.ondemand"
-	version 	= "0.0.18">
+	id		= "com.success.ondemand"
+	version 	= "0.0.20">
 
 	<name>Success On Demand</name>
 
@@ -10,7 +10,7 @@
 		Subscription-based mobile access to Success Magazine articles, as well as audio and video content.
 	</description>
 
-	<author href="http://dunghopper.github.com"
+  <author href="http://www.lightsandcolors.com"
 		email="dan@lightsandcolors.com">
 		Daniel Hilton
 	</author>
