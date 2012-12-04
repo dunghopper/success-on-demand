@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.success.ondemand"
-	version 	= "0.0.22">
+	version 	= "0.0.24">
 
 	<name>Success On Demand</name>
 
@@ -15,9 +15,10 @@
 		Daniel Hilton
 	</author>
 
-  <icon src="icon.png" gap:role="default" width="57" height="57" />
-  <icon src="resources/icons/Icon.png" gap:platform="ios" width="57" height="57" />
-  <icon src="resources/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />
+  <icon src="icon.png"/>
+  <icon src="resources/icons/Icon.png" width="57" height="57" />
+  <icon src="resources/icons/Icon~ipad.png" gap:platform="ios" width="72" height="72" />
+  <icon src="resources/icons/Icon@2x.png" width="114" height="114" />
 
   <gap:splash src="splash.png"/>
   <gap:splash src="resources/loading/Default.png" gap:platform="ios" width="320" height="480" />
@@ -26,6 +27,9 @@
   <gap:splash src="splash/ios/Default-ipad.png" gap:platform="ios" width="768" height="1004" />
 
   <preference name="orientation" value="portrait" />
+  <preference name="phonegap-version" value="2.0.0"/>
+
+  <feature name="http://api.phonegap.com/1.0/network"/>
 
   <access origin="*" browserOnly="true"/>
 </widget>
