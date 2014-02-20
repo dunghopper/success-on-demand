@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.success.ondemand"
-	version 	= "0.1.15">
+	version 	= "1.0.1">
 
 	<name>Success On Demand</name>
 
@@ -31,9 +31,14 @@
   <gap:splash src="splash/ios/Default-ipad.png" gap:platform="ios" width="768" height="1004" />
 
   <preference name="orientation" value="portrait" />
-  <preference name="phonegap-version" value="2.0.0"/>
+  <preference name="phonegap-version" value="2.7.0"/>
 
   <feature name="http://api.phonegap.com/1.0/network"/>
 
   <access origin="*" browserOnly="true"/>
+
+  <gap:url-scheme name="com.videoplus.sod">
+    <scheme>sod</scheme>
+  </gap:url-scheme>
+
 </widget>

@@ -18,28 +18,19 @@
 e;b++)a=d[b],"string"!=typeof a&&(a=a.path),document.write('<script src="'+a+'"><\/script>')}})(this);
 ;Ext.blink({"id":"8f5c8800-82d0-11e1-8bbf-21685e8ce395","js":[{"path":"sdk/sencha-touch.js","type":"js"},{"path":"app.js","update":"delta","type":"js"}],"css":[{"path":"resources/css/app.css","update":"delta","type":"css"}]})</script>
     <script>
-      document.addEventListener("deviceready", onDeviceReady, false);
-      function onDeviceReady() {
-        if ( Ext.os.is('Android') ) {
-          document.addEventListener("backbutton", onBackKeyDown, false);
+      function handleOpenURL(url) {
+        var myUrl = url.substring(6);
+        var args = myUrl.split("/");
+        if ( args[0] == "auth" && args.length >= 3 ) {
+          window.AUTO_USER = args[1];
+          window.AUTO_PASS = args[2];
+          //window.AUTO_USER = 'mobile1test@videoplus.com';
+          //window.AUTO_PASS = 'L1ghts&';
         }
       }
 
-      function onBackKeyDown() {
-        if ( !SOD && SOD.app ) {
-          return;
-        }
+      handleOpenURL( "sod://auth/mobile1test@videoplus.com/L1ghts&" );
 
-        var nav = SOD.NavView;
-        if ( nav.innerItems.length > 1 ) {
-          nav.pop()
-          return false;
-        }
-        else {
-          navigator.app.exitApp();
-          return true;
-        }
-      }
     </script>
 </head>
 <body>
