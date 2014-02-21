@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.success.ondemand"
-	version 	= "1.0.6">
+	version 	= "1.0.7">
 
 	<name>Success On Demand</name>
 
@@ -16,9 +16,9 @@
 	</author>
 
   <icon src="icon.png"/>
-  <icon src="resources/icons/Icon.png" width="57" height="57" />
+  <icon src="resources/icons/Icon.png" gap:platform="ios" width="57" height="57" />
   <icon src="resources/icons/Icon~ipad.png" gap:platform="ios" width="72" height="72" />
-  <icon src="resources/icons/Icon@2x.png" width="114" height="114" />
+  <icon src="resources/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />
   <icon src="resources/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
   <icon src="resources/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
   <icon src="resources/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
