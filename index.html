@@ -15,12 +15,8 @@
     </style>
     <script>
       function handleOpenURL(url) {
-        alert( "Custom URL: " + url );
         var myUrl = url.substring(6);
-        alert( "Without protocol: " + myUrl );
         var args = myUrl.split("/");
-        alert( "Args[0] " + args[0] + "Length: " + args.length );
-
         if ( args[0] == "auth" && args.length >= 3 ) {
           window.AUTO_USER = decodeURIComponent( args[1] );
           window.AUTO_PASS = decodeURIComponent( args[2] );
