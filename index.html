@@ -15,6 +15,9 @@
     </style>
     <script>
       function handleOpenURL(url) {
+
+        alert( 'Handling open url' );
+
         var myUrl = url.substring(6);
         var args = myUrl.split("/");
         if ( args[0] == "auth" && args.length >= 3 ) {
