@@ -48,7 +48,28 @@ e;b++)a=d[b],"string"!=typeof a&&(a=a.path),document.write('<script src="'+a+'">
     // Handle the resume event
     //
     function onResume() {
-      alert( "Resuming" );
+      if ( window.AUTO_USER && window.AUTO_PASS ) {
+        var sStore = Ext.getStore("Settings");
+        var config = sStore.first();
+
+        if ( config.get("loggedIn") && config.get("authToken") ) {
+          // We are already logged in
+          if ( window.AUTO_USER == config.get("email") ) {
+            // Already logged in with the requested user
+            // no-op.
+            window.AUTO_USER = null;
+            window.AUTO_PASS = null;
+          }
+          else {
+            // Already logged in with a different user
+            SOD.app.reLaunch();
+          }
+        }
+        else {
+          // Not logged in
+          SOD.app.launch(); // FIXME: Is it bad if Launch gets called twice?
+        }
+      }
     }
     </script>
 </head>
