@@ -19,10 +19,10 @@
   <icon src="resources/icons/Icon.png" gap:platform="ios" width="57" height="57" />
   <icon src="resources/icons/Icon~ipad.png" gap:platform="ios" width="72" height="72" />
   <icon src="resources/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />
-  <icon src="resources/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-  <icon src="resources/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-  <icon src="resources/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-  <icon src="resources/icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+  <icon src="resources/icons/Icon-76.png" gap:platform="ios" width="76" height="76" />
+  <icon src="resources/icons/Icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+  <icon src="resources/icons/Icon-76@2x.png" gap:platform="ios" width="152" height="152" />
 
   <gap:splash src="splash.png"/>
   <gap:splash src="resources/loading/Default.png" gap:platform="ios" width="320" height="480" />
